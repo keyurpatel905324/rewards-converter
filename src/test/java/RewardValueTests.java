@@ -19,5 +19,4 @@ public class RewardValueTests {
         double expectedCash = milesValue * 0.0035;//Conversation rate
         assertEquals(expectedCash, rewardValue.getCashValue());
     }
-
 }
