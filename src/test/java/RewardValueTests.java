@@ -9,7 +9,7 @@ public class RewardValueTests {
         double cashValue = 100;
         var rewardValue = new RewardValue(cashValue);
         double expectedMiles = cashValue / 0.0035; // Conversation rate
-        assertEquals(cashValue, rewardValue.getCashValue());
+        assertEquals(expectedMiles, rewardValue.getMilesValue());
     }
 
     @Test
@@ -17,6 +17,6 @@ public class RewardValueTests {
         int milesValue = 10000;
         var rewardValue = new RewardValue(milesValue);
         double expectedCash = milesValue * 0.0035;//Conversation rate
-        assertEquals(milesValue, rewardValue.getMilesValue());
+        assertEquals(expectedCash, rewardValue.getCashValue());
     }
 }
